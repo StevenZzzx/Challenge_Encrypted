@@ -88,7 +88,7 @@ function validateText() {
   cleanedText = "";
 
   for (let i = 0; i < text.length; i++) {
-    if (acceptLetters.includes(text[0])) {
+    if (acceptLetters.includes(text[i])) {
       cleanedText += text[i];
     } else {
       return false;
