@@ -1,0 +1,359 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #F3E6CA;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;  
+}
+
+.img-container{
+    width: auto;
+    height: 800px;
+
+    display:flex;
+    justify-content: center;
+
+    padding: 3rem;
+}
+
+.img-container img{
+    width: 120px;
+    height: 48px;
+    margin-right: none;
+}
+
+.form-container{
+    width: 950px;
+    height: 800px;
+
+    padding: 3rem;
+    
+}
+
+.input-container{
+    height: 500px;
+}
+
+.textarea {     
+    display:block;     
+    width: 100%;     
+    overflow: hidden;     
+    resize: both;
+    
+
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+
+    min-height: 40px;  
+    max-width: 600px;
+    max-height: 670px;   
+                              
+    color: black;
+    margin-top: 190px;
+}
+
+.textarea[contenteditable]:empty::before {    
+     content: "Ingrese el texto aqui...";    
+     color: black;
+     opacity: 35%; 
+    }
+
+.decorationP{
+    width: 450px;
+    display: flex;
+    height: auto;
+
+    align-items: center;
+    gap: 6px;
+    margin-top: 20px;
+
+}
+
+@keyframes warning{
+    50% {width: 15px;}
+    100% {width: 30px;}
+    
+}
+
+@keyframes noWarning{
+    0% {left: 0px;}
+}
+
+.decorationP img{
+    width: 25px;
+    
+    animation-name: noWarning;
+    animation-duration: 3s;
+    animation-iteration-count: infinite
+}
+
+.warning{
+    font-style: normal;
+    font-weight: 400;
+    font-size: auto;
+    line-height: 150%;
+    color: black;
+    opacity: 0,8;
+}
+
+.decorationP p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: black;
+    opacity: 0.8;
+}
+
+.Button-container{
+    display: flex;
+    gap: 1rem;
+    width: 600px;
+}
+
+.Button-container button{
+    
+    width: 328px;
+    height: 67px;
+
+    border-radius: 24px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    cursor:pointer;
+}
+
+.btn-encrypted{   
+    background: #7E2B1A;
+    border: 1px solid black;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-desencrypted{
+    background: #ebcf81;
+    border: 1px solid #000000;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.btn-encrypted:hover{
+
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
+}
+.btn-desencrypted:hover{
+
+    transition: all 0.3s ease-in;
+    transform: scale(1.05);
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
+}
+
+
+.info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 4rem;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    margin: 2rem;
+
+    background: #ebcf81;
+
+    text-align: center;
+}
+
+.info-container img{
+    width: 250px;
+    height: 360px;
+    background-color: #ebcf81;
+    
+}
+
+.text_info {
+    background-color: #ebcf81;
+}
+
+.info-container h2{
+    background-color: #ebcf81;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+
+    color: #343A40;
+}
+
+.info-container p{
+    background-color: #ebcf81;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #495057;
+}
+
+.withText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    background: #ebcf81;
+
+    text-align: center;
+}
+
+.noText{
+    background-color: #ebcf81;
+}
+
+#workingText{
+    background-color: #ebcf81;
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    padding-bottom: 500px;
+    
+}
+#btn-copy{
+    
+    width: 255px;
+    height: 67px;
+
+    border-radius: 24px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    cursor:pointer;
+
+    background: #ffffffa4;
+    border: 1px solid #000000;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+#btn-copy:hover{
+    transform: scale(1.05); 
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
+}
+
+@media screen and (max-width:820px){
+    .main-container{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .form-container {
+        width: 400px;
+        padding: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .textarea{
+        width: 450px;
+        max-width: 450px;
+        margin-left: none;
+    }
+    
+    .Button-container button{
+        width: 220px;
+    }
+    .Button-container{
+        width: 500px;
+        margin: none;
+    }
+
+    .img-container{
+        width: 450px;
+        height: auto;
+        justify-content: flex-start;
+    }
+
+    .info-container{
+        width: 400px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem;
+        margin-top: none;
+    }
+
+    .info-container img{
+        display: none;
+    }
+
+    #workingText{
+        padding-bottom: 90px;
+    }
+
+    .withText{
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin-top: none;
+    }
+
+    .img-container{
+        width: 400px
+    }
+
+}
+
+@media screen and (max-width:415px){
+
+    .form-container{
+        max-width: 100px;
+        margin-left: 20px;
+    }
+    .Button-container{
+        flex-direction: column;
+    }
+
+    .Button-container{
+        width: 350px;
+    }
+
+    .Button-container button{
+        width: 328px;
+    }
+    .info-container{
+        width: 330px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem;
+        margin-top: 7rem; 
+    }
+    .decorationP{
+        max-width: 300px;
+    }
+    .textarea{
+        max-width: 319px;
+        max-height: 707px;
+        
+    }
+    .img-container{
+        width: 300px;
+        margin-left: 20px;
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link href="style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="#">
+  </head>
+
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="img-container">
+          <img src="/assets/img/LogoMain.png" alt="Logo App">
+        </div>
+        <div class="form-container">
+            <div class="input-container"> 
+                <span id ="text" class="textarea" role="textbox" contenteditable=></span>
+            </div>
+          <div class="decorationP">
+            <img class = "warning" id = "warning1" src="/assets/img/Error.svg" alt="ErrorImg">
+            <p class ="warning" id = "warning2">Solo letras minusculas y sin acentos</p>
+          </div>
+          <div class="Button-container">
+            <button onClick=encryptFunction() class="btn-encrypted" >Encriptar</button>
+            <button onClick=decryptFunction() class="btn-desencrypted" >Desencriptar</button>
+          </div>
+        </div>
+        <div class="info-container">
+          <div class = "noText" id="noText">
+            <img src="/assets/img/DivInfo.png" alt="CodigoInfo">
+            <div class="text_info">
+              <h2>Ningun mensaje fue <br> encontrado</h2>
+              <p>Ingrese el texto que desees encriptar o <br> desencriptar</p>
+            </div>
+          </div>
+          <div class = "withText" id="withText" style="display: none;">
+            <input readonly = "true" id="workingText"/>
+            <button  onclick=copyText() id = "btn-copy" >Copiar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"> </script>
+  </body>
+</html>
