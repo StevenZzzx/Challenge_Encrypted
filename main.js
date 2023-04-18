@@ -1,6 +1,6 @@
 principal_letters = ["a", "e", "i", "o", "u"];
 change_letters = ["ai", "enter", "imes", "ober", "ufat"];
-const acceptLetters = "abcdefghijklmnñopqrstuvwxyz";
+const acceptLetters = "abcdefghijklmnñopqrstuvwxyz ";
 
 function encrypt(text) {
   var encrypted = "";
