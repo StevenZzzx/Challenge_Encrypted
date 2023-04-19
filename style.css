@@ -257,6 +257,24 @@
     transition: all 0.3s ease-in;
     box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
 }
+.footer-container{
+    background-color: #7E2B1A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container p{
+    background: none;
+    margin: 0px;
+}
+.footer-container a{
+    background: none;
+    color: #ebcf81;
+}
+.links{
+    background: none;
+}
 
 @media screen and (max-width:820px){
     .main-container{
