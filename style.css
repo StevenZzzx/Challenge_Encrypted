@@ -1,3 +1,7 @@
+body{ 
+    margin: 0;
+}
+
 *{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #F3E6CA;
@@ -49,7 +53,7 @@
 
     min-height: 40px;  
     max-width: 600px;
-    max-height: 670px;   
+    max-height: 500px;   
                               
     color: black;
     margin-top: 190px;
@@ -150,6 +154,7 @@
     transition: all 0.3s ease-in;
     box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
 }
+
 .btn-desencrypted:hover{
 
     transition: all 0.3s ease-in;
@@ -221,6 +226,7 @@
     background-color: #ebcf81;
 }
 
+
 #workingText{
     background-color: #ebcf81;
     border: none;
@@ -257,21 +263,26 @@
     transition: all 0.3s ease-in;
     box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 30);
 }
+
 .footer-container{
     background-color: #7E2B1A;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 13px;
 }
+
 .footer-container p{
     background: none;
     margin: 0px;
 }
+
 .footer-container a{
     background: none;
     color: #ebcf81;
 }
+
 .links{
     background: none;
 }
